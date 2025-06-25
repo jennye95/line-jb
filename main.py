@@ -1,8 +1,12 @@
-from login import get_logged_in_client
+import streamlit as st
+from search import fetch_posts_by_hashtag
 
-username = "jennyye__"
+if __name__ == "__main__":
+    st.title("Instagram Hashtag Explorer 🔍")
+    hashtag = st.text_input("Enter a hashtag (without #):")
 
-cl = get_logged_in_client()
-user_info = cl.user_info_by_username(username)
-print(user_info.username, user_info.follower_count)
-cl.direct_send('How are you?', user_ids=[user_info.pk])
+    if st.button("Search"):
+        posts = fetch_posts_by_hashtag(hashtag)
+        for post in posts:
+            st.image(post.thumbnail_url)  # Show post images
+            st.write(post.caption or "")
