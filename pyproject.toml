@@ -1,0 +1,20 @@
+[project]
+name = "line-jb"
+version = "0.1.0"
+description = "Line JB Project"
+authors = [{name = "Brian Angulo"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "instagrapi",
+    "psycopg2-binary",
+    "sodapy",
+    "pandas",
+    "streamlit",
+    "beautifulsoup4",
+    "snscrape",
+    "pytrends"
+]
+
+[tool.setuptools.packages.find]
+include = ["line_jb*"]
