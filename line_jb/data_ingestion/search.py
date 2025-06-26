@@ -6,7 +6,6 @@ import subprocess
 import json
 from pytrends.request import TrendReq
 import pandas as pd
-from line_jb.data_ingestion.nyc_open_data import fetch_parks_events, insert_parks_events
 import os
 # import snscrape.modules.twitter as sntwitter
 
@@ -64,13 +63,6 @@ def fetch_interest_by_region(keywords, timeframe='today 1-m', geo="US"):
     else:
         print(df.head())
 
-def fetch_and_store_parks_events():
-    """Helper method to fetch and store NYC Parks events."""
-    conn_string = os.environ.get("DATABASE_URL")
-    events = fetch_parks_events()
-    insert_parks_events(events, conn_string)
-    print(f"Inserted {len(events)} NYC Parks events.")
-
 if __name__ == "__main__":
 #    print("\n=== Instagrapi Hashtag Posts ===")
 #    posts = fetch_posts_by_hashtag("nyc", amount=5)
@@ -90,4 +82,3 @@ if __name__ == "__main__":
 #    keywords = ["news"]
 #    results = fetch_interest_by_region(keywords)
 
-    fetch_and_store_parks_events()
