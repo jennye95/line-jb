@@ -1,0 +1,12 @@
+instagrapi
+psycopg2-binary
+sodapy
+pandas
+streamlit
+beautifulsoup4
+snscrape
+pytrends
+geopandas
+osmnx
+folium
+shapely

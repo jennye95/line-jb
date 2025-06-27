@@ -1,3 +1,4 @@
+# pyproject.toml
 [project]
 name = "line-jb"
 version = "0.1.0"
@@ -13,7 +14,11 @@ dependencies = [
     "streamlit",
     "beautifulsoup4",
     "snscrape",
-    "pytrends"
+    "pytrends",
+    "geopandas",
+    "osmnx",     
+    "folium",    
+    "shapely"    
 ]
 
 [tool.setuptools.packages.find]
