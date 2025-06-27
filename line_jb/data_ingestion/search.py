@@ -81,4 +81,3 @@ if __name__ == "__main__":
 #    print("\n=== Google Trends (US) ===")
 #    keywords = ["news"]
 #    results = fetch_interest_by_region(keywords)
-
