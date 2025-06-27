@@ -1,6 +1,6 @@
 -- NYC Parks Events
 CREATE TABLE IF NOT EXISTS nyc_parks_events (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     event_name TEXT,
     location TEXT,
     date_and_time TEXT,
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS nyc_sidewalk_status (
 );
 
 -- NYC Parks & Recreation Forestry Tree Points Record
-CREATE TABLE IF NOT EXISTS tree_points (
+CREATE TABLE IF NOT EXISTS nyc_tree_points (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	objectid INTEGER UNIQUE,
 	dbh INTEGER,
