@@ -32,3 +32,18 @@ Why it’s cool and useful:
     It’s interview-ready: shows skills in API integration, data cleaning, NLP, and visualization.
 
     It has tons of room to grow: add Twitter, TikTok, or NYC open datasets later.
+
+## System Requirements
+
+Before installing Python dependencies, make sure the following system packages are installed:
+
+- PROJ: Required for pyproj and geopandas
+
+On macOS (Homebrew):
+brew install proj
+
+On Ubuntu/Debian:
+sudo apt-get install libproj-dev
+
+Then install the Python dependencies:
+pip install -e .[dev]

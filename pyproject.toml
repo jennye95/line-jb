@@ -16,6 +16,7 @@ dependencies = [
     "snscrape",
     "pytrends",
     "geopandas",
+    "pyproj",
     "osmnx",     
     "folium",    
     "shapely"    
