@@ -1,9 +1,16 @@
 # line-jb
 we're gonna get sum 🥯
 
-Project Idea: “InstaPulse” — Real-Time Instagram Trend & Location Analytics
+Project Idea: Real-Time Trend / Event & Location Analytics
+
 What it does:
-    Ingests Instagram posts based on location searches, hashtags, or user handles.
+    Ingests social media posts based on searchs and hashtags to gauge excitement or concerns.
+
+	check for subway delays affecting event attendance.
+
+	Avoid streets with sanitation or noise complaints
+
+	Finds concerts, fairs, special activities nearby
 
     Extracts metadata: captions, timestamps, location, hashtags, mentions.
 
@@ -11,17 +18,17 @@ What it does:
 
     Visualizes the insights on a simple dashboard or exports to CSV for analysis.
 
-    (Bonus!) Applies NLP to detect sentiment or categorize posts (event vs. casual vs. promo).
+    Applies NLP to detect sentiment or categorize posts (event vs. casual vs. promo).
 
-Why it’s cool and useful
-    Your gf gets to flex data pipelines skills: extraction, transformation, and loading (ETL).
+Why it’s cool and useful:
+	Users aware of transit issues or neighborhood complaints can avoid unpleasant experiences, improving overall satisfaction with city life and events.
 
-    You can play with music, art, events, and see what’s trending in real-time on Instagram.
+	Many event apps just list events. Our project can stand out by combining event data + live community issues + transit conditions, offering a richer, actionable snapshot of urban life.:
+	
+    Flex data pipelines skills: extraction, transformation, and loading (ETL).
+
+    Play with music, art, events, and see what’s trending in real-time on Instagram.
 
     It’s interview-ready: shows skills in API integration, data cleaning, NLP, and visualization.
 
     It has tons of room to grow: add Twitter, TikTok, or NYC open datasets later.
-
-To run
-streamlit run main.py
-

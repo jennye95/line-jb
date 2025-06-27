@@ -15,16 +15,35 @@ CREATE TABLE IF NOT EXISTS nyc_parks_events (
     CONSTRAINT unique_event UNIQUE(event_name, date_and_time, location)
 );
 
--- Placeholder for future tables
--- e.g., NYC 311 Service Requests
-CREATE TABLE IF NOT EXISTS nyc_311_requests (
-    id SERIAL PRIMARY KEY,
-    complaint_type VARCHAR(255),
-    status VARCHAR(100),
-    created_date TIMESTAMP,
-    latitude DECIMAL(9, 6),
-    longitude DECIMAL(9, 6)
+-- NYC Permitted Events (Historical)
+CREATE TABLE IF NOT EXISTS permitted_events_historical (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	event_id INTEGER,
+	event_name TEXT,
+	start_date_time TEXT,
+	end_date_time TEXT,
+	event_agency TEXT,
+	event_type TEXT,
+	event_borough TEXT,
+	event_location TEXT,
+	event_street_side TEXT,
+	street_closure_type TEXT,
+	community_board TEXT,
+	police_precinct TEXT,
+	UNIQUE(event_id)
 );
+
+-- NYC Permitted Events
+
+-- NYC 311 Service Requests
+
+-- NYC 311 Resolution Satisfaction Survey Responses
+
+-- LinkNYC Kiosk Status Records
+
+-- NYC Sidewalk Management Database (Violations)
+
+-- NYC Parks & Recreation Forestry Tree Points Record
 
 -- Placeholder for social media posts
 CREATE TABLE IF NOT EXISTS social_posts (

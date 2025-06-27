@@ -2,6 +2,7 @@ import os
 import streamlit as st
 from line_jb.data_ingestion.search import fetch_posts_by_hashtag
 from line_jb.data_ingestion.nyc_open_data import fetch_parks_events, insert_parks_events
+from insert_manager import InsertManager
 
 if __name__ == "__main__":
 #    st.title("Instagram Hashtag Explorer 🔍")
